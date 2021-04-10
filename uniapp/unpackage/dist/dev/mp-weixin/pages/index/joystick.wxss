@@ -1,0 +1,32 @@
+
+.outerImg {
+	background-color: #C0C0C0;
+	padding-left: 50px;
+	padding-top: 50px;
+	position:absolute;
+	mode:"aspectFill";
+}
+.innerImg{
+	padding-left: 50px;
+	padding-top: 50px;
+	position:absolute;
+	mode:"aspectFill";
+}
+.content {
+	/* display: flex; */
+	/* align-items: flex-start; */
+	/* justify-content: left; */
+	margin-left: 0px;
+	margin-top: 0px;
+	position: absolute;
+}
+.text-area {
+	/* display: flex; */
+	
+	position: relative;
+}
+.title {
+	font-size: 36px;
+	color: #8f8f94;
+}
+
