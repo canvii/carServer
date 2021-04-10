@@ -12,10 +12,9 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Map;
+
 
 @Controller
-
 public class carcontroller {
     @Resource
     private RedisUtil redisUtil;
