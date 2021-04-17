@@ -18,23 +18,23 @@ import java.io.IOException;
 public class carcontroller {
     @Resource
     private RedisUtil redisUtil;
-    @RequestMapping("/car/{x}/{y}")
-   public String car( @PathVariable(value = "x") String x, @PathVariable(value = "y") String y){
+    @RequestMapping("/{x}/{y}")
+   public void car( @PathVariable(value = "x") String x, @PathVariable(value = "y") String y){
 
         redisUtil.set("x",x);
         redisUtil.set("y",y);
         System.out.println(x+" : "+y);
-        return "";
+        return ;
    }
 
 
 
-    @RequestMapping("/getPosition")
+    @RequestMapping("/getxy")
     public void getPosition(HttpServletRequest request , HttpServletResponse response){
 
 //        System.out.println(redisUtil.get("x")+" :"+redisUtil.get("y"));
 
-       String s = "x"+redisUtil.get("x")+"y"+redisUtil.get("y");
+       String s = redisUtil.get("x")+":"+redisUtil.get("y");
         try {
             response.getWriter().println(s);
         } catch (IOException e) {

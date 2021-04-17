@@ -57,7 +57,7 @@
 				this.totop=movePosition.posY
 				
 				uni.request({
-					url:"http://localhost:8080/car/"+this.realPosX+"/"+this.realPosY
+					url:"http://192.168.12.1:8080/puppy/"+this.realPosX+"/"+this.realPosY
 				})
 			},
 			zero(){
@@ -66,7 +66,7 @@
 				this.realPosX=0
 				this.realPosY=0
 				uni.request({
-					url:"http://localhost:8080/car/"+0+"/"+0
+					url:"http://192.168.12.1:8080/puppy/"+0+"/"+0
 				})
 				
 			},
@@ -78,7 +78,7 @@
 				this.realPosX=0
 				this.realPosY=0
 				uni.request({
-					url:"http://localhost:8080/car/"+0+"/"+0
+					url:"http://192.168.12.1:8080/puppy/"+0+"/"+0
 				})
 			},
 			GetPosition (touchX, touchY,centerX,centerY) {
